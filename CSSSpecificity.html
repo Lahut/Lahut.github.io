@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Mystyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            p2 { position: relative; left: 170px; top: 40px;}
+            p1 { position: relative;  top: 30px; left: 40px;}
+            p {
+                position: relative; top: 200PX;
+            }
+            body {
+                background-image: url("../web-tech/img/mnm.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <p1 style="font-size: 100px"><span style="color: #355c7d">C</span>
+                        <span style="color: #6C5B7B">S</span> <span style="color: #C06C84">S</span> <br></p1>
+                    <p2 style="font-size: 35px">SPECIFICITY</p2>    
+                </div>
+
+                <div class="col">
+
+                    
+
+                    <p>CSS Specificity เป็นคอนเซปต์การเลือก CSS Selector ที่มี แต้ม เยอะที่สุด มาใช้กับ Element บนหน้าเว็บไซต์ <br>
+                            ภาษา CSS เหมือนภาษาการเขียนโปรแกรมอื่น ๆ ที่อ่านโค้ดจาก บน – ล่าง  แปลว่า ถ้าเขียน CSS Selector ซ้ำกัน 2 อัน <br> อันล่างจะถูกนำไปใช้งานเพราะใหม่กว่า แต่ความพิเศษของ CSS คือ Selector ที่แตกต่างกันแต่ละ Selector จะมี แต้ม ไม่เหมือนกัน <br> และเมื่อไหร่ที่ แต้ม ต่างกัน ลำดับการเขียนโค้ดจะไม่มีผลทันที</p>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                    <p><u>Example <br> </u></p>
+                    <p1>HTML</p1>
+
+                    <div class="examplehtml">
+                            <span class="kw1">&lt;hr class="line" id="redline"&gt;</span>
+                    </div>
+                    <br>
+
+                    <p1 class="cssex">CSS</p1>
+                    <div class="examplecss">
+                        <span>.line { color : black}  >>>>>>ทำให้เส้นเป็นสีดำ </span> <br><br><br>
+                        <span>#redline { color : red}  >>>>>>ทำให้เส้นเป็นสีแดง</span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-8">
+                    <p1 class="explain"> .line {} มีแต้ม 10 แต้ม {} <br> #redline {} มีแต้ม 100 แต้ม <br>
+                        เพราะฉะนั้น CSS Property ใน #redline {} ที่มีแต้ม 100 จะถูกดึงมาแสดงผลทับของ .line {}(10แต้ม) ที่มีแต้มน้อยกว่า เพราะมีแต้มมากกว่านั้นเอง <br>
+                        
+
+                        สามารถเข้าไปคำนวณแต้มได้ที่เว็บ  <a href="https://specificity.keegan.st/">Specificity Calculator</a> <br>
+                        <img class="aligncenter size-full wp-image-2771" src="https://www.designil.com/wp-content/uploads/2014/09/specificity-calculator-css.png" alt="คิดค่าพลัง CSS Selector" width="500" height="400" srcset="https://www.designil.com/wp-content/uploads/2014/09/specificity-calculator-css.png 731w, https://www.designil.com/wp-content/uploads/2014/09/specificity-calculator-css-300x268.png 300w, https://www.designil.com/wp-content/uploads/2014/09/specificity-calculator-css-335x299.png 335w" sizes="(max-width: 731px) 100vw, 731px">
+                    </p1>
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+    </body>
+</html>
